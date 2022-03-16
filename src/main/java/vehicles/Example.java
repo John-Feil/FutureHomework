@@ -23,7 +23,7 @@ public class Example {
                 System.out.println("Not a week day");
         }
         int age = 19;
-        if (age > 21){  // If Else If Statement
+        if (age >= 21){  // If Else If Statement
             System.out.println("Can drink");
         }
         else if (age == 21){
