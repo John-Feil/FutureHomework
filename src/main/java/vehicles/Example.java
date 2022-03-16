@@ -3,7 +3,7 @@ package vehicles;
 public class Example {
     public static void main(String[] args) {
         int days = 4;
-        switch (days) {
+        switch (days) {  // Switch Statement
             case 1:
                 System.out.println("Monday");
                 break;
@@ -23,7 +23,7 @@ public class Example {
                 System.out.println("Not a week day");
         }
         int age = 19;
-        if (age > 21){
+        if (age > 21){  // If Else If Statement
             System.out.println("Can drink");
         }
         else if (age == 21){
@@ -32,7 +32,7 @@ public class Example {
         else {
             System.out.println("Underage");
         }
-        String canDrink = (age > 17) ? "Can party" : "Cannot party";
+        String canDrink = (age > 17) ? "Can party" : "Cannot party";  //Ternary Statement
         System.out.println(canDrink);
     }
 }
