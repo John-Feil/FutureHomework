@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class Demo {
             System.out.println("Current failed attempts: " + failedAttempts);
             System.out.println("Please enter the password:");
             attempt = userInput.nextLine();
-            if (attempt.equals(password)) {
+            if (Objects.equals(attempt, "password")) {
                 System.out.println("Logged in!");
                 loggedIn = true;
             } else {
