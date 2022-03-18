@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Newproblems {
@@ -5,11 +6,17 @@ public class Newproblems {
         String myName = "John Feil";
         String test = "The Farmer went to the store to get 1 dollar's worth of fertilizer";
         String[] cars = {"Mercedes", "Benz", "Ford","Prius"};
-        int num = 100000;
-        int answer = vowelsCounter(myName);
-        System.out.println(answer);
+        int num = 100;
+        System.out.println("First Question: ");
+        System.out.println(vowelsCounter(myName));
+        System.out.println();
+        System.out.println("Second Question: ");
         System.out.println(replaceCharacters(test));
+        System.out.println();
+        System.out.println("Third Question: ");
         System.out.println(createStringOfFibonnaciUpToMax(num));
+        System.out.println();
+        System.out.println("Fourth Question: ");
         System.out.println(Arrays.toString(swap(cars)));
     }
 
@@ -55,11 +62,11 @@ public class Newproblems {
             while (numTwo <= maxnumber){
                 numOne += numTwo;
                 if (numOne <= maxnumber){
-                    result += "" + numOne;
+                    result += "," + numOne;
                 }
                 numTwo += numOne;
                 if (numTwo <= maxnumber) {
-                    result += "" + numTwo;
+                    result += "," + numTwo;
                 }
             }
         return result;
