@@ -3,4 +3,4 @@ target/
 .idea/
 *.iml
 *.iws
-Topmuscians.java
+src/main/java/Topmuscians.java
