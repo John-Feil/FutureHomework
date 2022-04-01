@@ -5,8 +5,8 @@ public class Answer {
         String[] firstNames = {"John", "Emoni", "Isaiah", "Kyle"};
         int[] countToTen = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         String myName = "Kyle";
-        int age = 20;
-        int favNum = 33;
+        int age = 2;
+        int favNum = 14;
         // First Question
         System.out.println("First Question: ");
         int index = getLastIndex(firstNames);
@@ -159,15 +159,18 @@ public class Answer {
         return answer;
     }
     public static void printOddNumbersInRange(int start, int end){
+        StringBuilder sb = new StringBuilder();
         if (start % 2 == 0){ //Starts even
-            for(int i = 1 + start; i < end; i+=2){
-                System.out.println(i);
+            for(int i = 1 + start; i <= end; i+=2){
+                sb.append(i).append(',').append(" ");   //Adds the numbers to a string with a comma and space
             }
+            System.out.print(sb.substring(0, (sb.length()-2)));  //prints out a substring ignoring the last two characters
         }
         else{  //Starts odd
-            for(int x = start; x < end; x+=2){
-                System.out.println(x);
+            for(int x = start; x <= end; x+=2){
+                sb.append(x).append(',').append(" ");  //Adds the numbers to a string with a comma and space
             }
+            System.out.print(sb.substring(0, (sb.length()-2)));  //prints out a substring ignoring the last two characters
         }
     }
     public static String printGivenStringTimesNumberGiven(String str, int n) {

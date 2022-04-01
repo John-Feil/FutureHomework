@@ -1,9 +1,12 @@
-package NewHomework;
+package newhomework;
 
 public class Main {
     public static void main(String[] args) {
         Calculator twoDigits = new Calculator(10.0d,3.0d);
         System.out.println(twoDigits.Add());
+        if (twoDigits.Add() == 13){
+            System.out.println("Wow");
+        }
         System.out.println(twoDigits.Subtract());
         System.out.println(twoDigits.Multiply());
         System.out.println(twoDigits.Divide());
@@ -11,6 +14,5 @@ public class Main {
         Calculator oneDigit = new Calculator(25.0d);
         System.out.println(oneDigit.square());
         System.out.println(oneDigit.squareRoot());
-
     }
 }

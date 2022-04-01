@@ -1,4 +1,4 @@
-package NewHomework;
+package newhomework;
 
 public class Calculator {
     private double numberOne;

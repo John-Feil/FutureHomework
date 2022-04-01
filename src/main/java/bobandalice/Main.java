@@ -1,4 +1,4 @@
-package BobAndAlice;
+package bobandalice;
 import java.util.*;
 
 public class Main {
